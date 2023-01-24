@@ -1,0 +1,271 @@
+package com.sample;
+ 
+rule "Pravilo 1"
+    when
+        videogame: VideoGames(category == "action", section == "software",
+        playersupport == "multiplayer", paidgame == "yes", topseller == "yes",
+        discount == "no", mostplayed == "yes");
+    then
+        videogame.setNameofgame("Igrica - Call of duty 2");
+    end
+
+rule "Pravilo 2"
+    when
+        videogame: VideoGames(category == "action", section == "software",
+        playersupport == "multiplayer", paidgame == "yes", topseller == "yes",
+        discount == "yes", mostplayed == "no");
+    then
+        videogame.setNameofgame("Igrica - CSGO");
+    end 
+
+rule "Pravilo 3"
+    when
+        videogame: VideoGames(category == "action", section == "playstation",
+        playersupport == "multiplayer", paidgame == "yes", topseller == "yes",
+        discount == "yes", mostplayed == "no");
+    then
+        videogame.setNameofgame("Igrica - PUBG");
+    end 
+    
+rule "Pravilo 4"
+    when
+        videogame: VideoGames(category == "action", section == "software",
+        playersupport == "multiplayer", paidgame == "yes", topseller == "yes",
+        discount == "yes", mostplayed == "no");
+    then
+        videogame.setNameofgame("Igrica - Call of Duty MW3");
+    end 
+    
+rule "Pravilo 5"
+    when
+        videogame: VideoGames(category == "action", section == "android",
+        playersupport == "multiplayer", paidgame == "yes", topseller == "yes",
+        discount == "yes", mostplayed == "no");
+    then
+        videogame.setNameofgame("Igrica - CoD Mobile");
+    end   
+
+rule "Pravilo 6"
+    when
+        videogame: VideoGames(category == "sport", section == "software",
+        playersupport == "multiplayer", paidgame == "yes", topseller == "yes",
+        discount == "no", mostplayed == "yes");
+    then
+        videogame.setNameofgame("Igrica - PES");
+    end 
+    
+rule "Pravilo 7"
+    when
+        videogame: VideoGames(category == "action", section == "software",
+        playersupport == "multiplayer", paidgame == "yes", topseller == "yes",
+        discount == "yes", mostplayed == "yes");
+    then
+        videogame.setNameofgame("Igrica - FIFA");
+    end 
+    
+rule "Pravilo 8"
+    when
+        videogame: VideoGames(category == "sport", section == "software",
+        playersupport == "multiplayer", paidgame == "yes", topseller == "yes",
+        discount == "yes", mostplayed == "no");
+    then
+        videogame.setNameofgame("Igrica - NBA 2K");
+    end 
+    
+rule "Pravilo 9"
+    when
+        videogame: VideoGames(category == "sport", section == "software",
+        playersupport == "singleplayer", paidgame == "yes", topseller == "no",
+        discount == "yes", mostplayed == "no");
+    then
+        videogame.setNameofgame("Igrica - NBA Live");
+    end 
+    
+rule "Pravilo 10"
+    when
+        videogame: VideoGames(category == "sport", section == "software",
+        playersupport == "singleplayer", paidgame == "yes", topseller == "no",
+        discount == "yes", mostplayed == "no");
+    then
+        videogame.setNameofgame("Igrica - NFL");
+    end 
+    
+rule "Pravilo 11"
+    when
+        videogame: VideoGames(category == "racing", section == "software",
+        playersupport == "singleplayer", paidgame == "yes", topseller == "yes",
+        discount == "yes", mostplayed == "no");
+    then
+        videogame.setNameofgame("Igrica - Need for Speed");
+    end 
+    
+rule "Pravilo 12"
+    when
+        videogame: VideoGames(category == "racing", section == "software",
+        playersupport == "singleplayer", paidgame == "no", topseller == "no",
+        discount == "no", mostplayed == "no");
+    then
+        videogame.setNameofgame("Igrica - Lego Racers");
+    end 
+    
+rule "Pravilo 13"
+    when
+        videogame: VideoGames(category == "racing", section == "software",
+        playersupport == "singleplayer", paidgame == "yes", topseller == "yes",
+        discount == "no", mostplayed == "yes");
+    then
+        videogame.setNameofgame("Igrica - Formula 1");
+    end 
+    
+rule "Pravilo 14"
+    when
+        videogame: VideoGames(category == "racing", section == "software",
+        playersupport == "singleplayer", paidgame == "yes", topseller == "yes",
+        discount == "yes", mostplayed == "no");
+    then
+        videogame.setNameofgame("Igrica - Asphalt 9");
+    end 
+    
+rule "Pravilo 15"
+    when
+        videogame: VideoGames(category == "racing", section == "software",
+        playersupport == "singleplayer", paidgame == "yes", topseller == "no",
+        discount == "yes", mostplayed == "no");
+    then
+        videogame.setNameofgame("Igrica - Wheels");
+    end 
+    
+rule "Pravilo 16"
+    when
+        videogame: VideoGames(category == "openworld", section == "software",
+        playersupport == "multiplayer", paidgame == "yes", topseller == "yes",
+        discount == "yes", mostplayed == "yes");
+    then
+        videogame.setNameofgame("Igrica - GTA V");
+    end  
+    
+rule "Pravilo 17"
+    when
+        videogame: VideoGames(category == "openworld", section == "software",
+        playersupport == "singleplayer", paidgame == "yes", topseller == "yes",
+        discount == "yes", mostplayed == "yes");
+    then
+        videogame.setNameofgame("Igrica - Assasin's Creed");
+    end 
+    
+rule "Pravilo 18"
+    when
+        videogame: VideoGames(category == "openworld", section == "software",
+        playersupport == "singleplayer", paidgame == "no", topseller == "yes",
+        discount == "no", mostplayed == "yes");
+    then
+        videogame.setNameofgame("Igrica - GTA San Andreas");
+    end 
+    
+rule "Pravilo 19"
+    when
+        videogame: VideoGames(category == "openworld", section == "software",
+        playersupport == "singleplayer", paidgame == "yes", topseller == "no",
+        discount == "yes", mostplayed == "no");
+    then
+        videogame.setNameofgame("Igrica - The Witcher 3");
+    end 
+    
+rule "Pravilo 20"
+    when
+        videogame: VideoGames(category == "openworld", section == "software",
+        playersupport == "singleplayer", paidgame == "yes", topseller == "no",
+        discount == "yes", mostplayed == "no");
+    then
+        videogame.setNameofgame("Igrica - Red Dead Redemption 2");
+    end 
+    
+rule "Pravilo 21"
+    when
+        videogame: VideoGames(category == "arcade", section == "software",
+        playersupport == "singleplayer", paidgame == "no", topseller == "yes",
+        discount == "no", mostplayed == "no");
+    then
+        videogame.setNameofgame("Igrica - Pinball");
+    end 
+    
+rule "Pravilo 22"
+    when
+        videogame: VideoGames(category == "arcade", section == "software",
+        playersupport == "multiplayer", paidgame == "yes", topseller == "yes",
+        discount == "yes", mostplayed == "yes");
+    then
+        videogame.setNameofgame("Igrica - Tekken");
+    end 
+    
+rule "Pravilo 23"
+    when
+        videogame: VideoGames(category == "arcade", section == "software",
+        playersupport == "singleplayer", paidgame == "no", topseller == "yes",
+        discount == "no", mostplayed == "yes");
+    then
+        videogame.setNameofgame("Igrica - Angry Birds");
+    end 
+    
+rule "Pravilo 24"
+    when
+        videogame: VideoGames(category == "arcade", section == "software",
+        playersupport == "singleplayer", paidgame == "no", topseller == "yes",
+        discount == "no", mostplayed == "yes");
+    then
+        videogame.setNameofgame("Igrica - Tekken");
+    end 
+    
+rule "Pravilo 25"
+    when
+        videogame: VideoGames(category == "arcade", section == "software",
+        playersupport == "singleplayer", paidgame == "yes", topseller == "no",
+        discount == "yes", mostplayed == "no");
+    then
+        videogame.setNameofgame("Igrica - Sonic the hedgehog");
+    end 
+    
+rule "Pravilo 26"
+    when
+        videogame: VideoGames(category == "strategy", section == "software",
+        playersupport == "multiplayer", paidgame == "yes", topseller == "yes",
+        discount == "yes", mostplayed == "no");
+    then
+        videogame.setNameofgame("Igrica - Age of Empires");
+    end 
+    
+rule "Pravilo 27"
+    when
+        videogame: VideoGames(category == "strategy", section == "software",
+        playersupport == "singleplayer", paidgame == "no", topseller == "yes",
+        discount == "no", mostplayed == "yes");
+    then
+        videogame.setNameofgame("Igrica - DOTA");
+    end 
+    
+rule "Pravilo 28"
+    when
+        videogame: VideoGames(category == "strategy", section == "software",
+        playersupport == "multiplayer", paidgame == "no", topseller == "yes",
+        discount == "no", mostplayed == "yes");
+    then
+        videogame.setNameofgame("Igrica - World of Tanks");
+    end 
+    
+rule "Pravilo 29"
+    when
+        videogame: VideoGames(category == "strategy", section == "software",
+        playersupport == "multiplayer", paidgame == "no", topseller == "yes",
+        discount == "no", mostplayed == "yes");
+    then
+        videogame.setNameofgame("Igrica - Warcraft");
+    end 
+    
+rule "Pravilo 30"
+    when
+        videogame: VideoGames(category == "strategy", section == "software",
+        playersupport == "singleplayer", paidgame == "yes", topseller == "yes",
+        discount == "yes", mostplayed == "no");
+    then
+        videogame.setNameofgame("Igrica - Crusader Kings");
+    end 

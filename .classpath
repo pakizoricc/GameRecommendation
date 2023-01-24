@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="images"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/antlr-runtime.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/drools-compiler.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/drools-core.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/drools-decisiontables.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/drools-jsr94.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/drools-templates.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/jbpm-bpmn2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/jbpm-flow.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/jbpm-flow-builder.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/jsr94.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/junit.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/kie-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/kie-internal.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/mvel2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/org.eclipse.jdt.core_3.13.102.v20180330-0919.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/org.eclipse.jdt.core_3.19.0.v20190903-0936.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/poi.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/poi-ooxml.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/protobuf-java.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/slf4j-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/xmlpull.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/xpp3_min.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pavle/Downloads/Drools JAR/xstream.jar"/>
+	<classpathentry kind="output" path="target"/>
+</classpath>
